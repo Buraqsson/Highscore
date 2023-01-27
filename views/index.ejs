@@ -1,0 +1,23 @@
+<section>
+  <h1 class="Highscoretext">Highscores</h1>
+  <link rel="stylesheet" href="/stylesheets/style.css" />
+  <% allHighscores.forEach(higscore => { %>
+  <a href="/games/<%= higscore.url_slug %>">
+    <div class="highscore">
+      <div class="container">
+        <div class="row">
+          <div class="game col-sm"><%= higscore.game_title %></div>
+          <div class="points col-sm"><%= higscore.score %></div>
+        </div>
+        <div class="row">
+          <div class="player_date col-sm">
+            <%= higscore.player %>, <%const scoreDate = new
+            Date(higscore.score_date); %>
+            <%=scoreDate.toLocaleDateString('se-SE'); %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </a>
+  <% }) %>
+</section>

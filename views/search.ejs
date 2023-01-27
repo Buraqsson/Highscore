@@ -1,0 +1,27 @@
+<section class="search-results mb-4">
+  <div class="text-center mb-4">
+    Hittade <%= Games.length %> träffar på "<%= searchWord%>"
+  </div>
+  <div class="highscore">
+    <div class="container">
+      <div class="row">
+        <% Games.forEach(game => { %>
+
+        <div class="col">
+          <span class="game"><%= game.game_title %></span>
+          <div><%= game.genre %>,<%= game.release_year %></div>
+        </div>
+
+        <div class="col searchImg">
+          <img
+            src="<%= game.image_url %>"
+            alt=""
+            class="mb-2"
+            style="width: 140px; height: 100px"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+  <% }) %>
+</section>

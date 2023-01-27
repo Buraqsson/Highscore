@@ -1,0 +1,28 @@
+<div class="container">
+  <div class="row">
+    <div class="game col-sm">Spel</div>
+    <div class="points col-sm">
+      <a class="btn btn-primary" href="/admin/games/new">Nytt Spel</a>
+    </div>
+  </div>
+</div>
+<table class="table table-striped text-center">
+  <thead>
+    <tr>
+      <th scope="col">ID</th>
+      <th scope="col">Title</th>
+      <th scope="col">Genre</th>
+      <th scope="col">Release date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% games.forEach(games => { %>
+    <tr>
+      <td><%= games.id %></td>
+      <td><%= games.game_title %></td>
+      <td><%= games.genre %></td>
+      <td><%= games.release_year %></td>
+    </tr>
+    <% }) %>
+  </tbody>
+</table>

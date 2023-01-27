@@ -1,0 +1,93 @@
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #0c90f6;
+}
+a:link {
+  text-decoration: none;
+}
+
+.header {
+  padding-top: 30px;
+  text-align: center;
+  background-color: #0c90f6;
+  padding-bottom: 20px;
+}
+.header div {
+  padding-bottom: 20px;
+}
+.footer {
+  padding: 50px;
+  text-align: center;
+  background-color: #0c90f6;
+}
+.startsida {
+  text-align: center;
+}
+.highscore {
+  border-style: solid;
+  margin: 20px;
+}
+.highscore:hover {
+  border-style: solid;
+  margin: 20px;
+  background-color: rgb(112, 204, 246);
+  color: rgb(109, 14, 242);
+}
+.game {
+  font-weight: 900;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: large;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.game div::first-child {
+  text-decoration: none;
+}
+.points {
+  font-weight: 900;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: large;
+  text-align: left;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.player_date {
+  font-size: large;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.Highscoretext {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: large;
+  margin: 10px;
+  text-align: center;
+}
+.new {
+  margin-left: 20px;
+}
+
+.new div {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.new input {
+  width: 400px;
+}
+.new select {
+  width: 400px;
+}
+.new textarea {
+  width: 400px;
+}
+.searchImg {
+  text-align: right;
+  padding-top: 10px;
+  margin: 20px;
+}
+.InfoImg {
+  text-align: left;
+  padding-top: 10px;
+}

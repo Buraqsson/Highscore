@@ -1,0 +1,33 @@
+<form method="post" >
+  <div class="new">
+    <h1>Nytt spel</h1>
+    <div>
+      
+      <input type="text" name="game_title" class="form-control" placeholder="Title"/>
+    </div>
+    <div>
+      
+      <textarea name="description"class="form-control" rows="3" placeholder="Beskrivning"></textarea>
+    </div>
+    <div>
+     
+      <input name="image_url" type="text" class="form-control" placeholder="Bild"/>
+    </div>
+    <div>
+      <label>Genre</label>
+      <select name="genre"class="form-control">
+        <option class="Puzzle">Puzzle</option>
+        <option class="Shooter">Shooter</option>
+        <option class="Platform">Platform</option>
+        <option class="Action">Action-adventyre</option>
+        <option class="Sport">Sport</option>
+      </select>
+    </div>
+    <div>
+      
+      <input name="release_year" type="number" maxlength="4"  class="form-control" placeholder="Lanseringsår"/>
+    </div>
+    <div>
+  </div>
+  <button  type="submit" class="btn btn-primary">Lägg till</button>
+</form>

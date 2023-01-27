@@ -1,0 +1,34 @@
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col InfoImg">
+        <img
+          src="<%= games.image_url %>"
+          alt=""
+          class="mb-2"
+          style="width: 400px; height: 400px"
+        />
+      </div>
+      <div class="col">
+        <span class="game"> <%= games.game_title %></span>
+        <div><%= games.release_year %>,<%= games.genre %></div>
+        <div><%= games.description %></div>
+      </div>
+    </div>
+  </div>
+
+  <% result_scores.forEach(highscore => { %>
+    <div class="highscore">
+      <div class="container">
+        <div class="row">
+        <div class="points col-sm"><%= highscore.player %></div>
+        <div class="score_date col-sm">
+          <%= highscore.highscore %>, <%=highscore.date %>
+        </div>
+      </div> 
+      </div>
+  <% }) %>
+
+
+  
+</section>

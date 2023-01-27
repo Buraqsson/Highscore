@@ -1,0 +1,33 @@
+<form method="post">
+  <div class="new">
+    <h1>Nytt highscore</h1>
+    <div>
+      
+      <label>Spel</label>
+      <select name="gameid" class="form-control">
+        <% titleGame.forEach(highscore => { %>
+        <option value="<%= highscore.id %>"><%= highscore.game_title %></option>
+        <% }) %>
+      </select>
+      
+    </div>
+    <div>
+      <label>Spelare</label>
+      <input name="player" type="text" class="form-control" />
+    </div>
+    <div>
+        <label>Datum</label>
+        <input name="score_date" type="date" min="2022-01-01" max="2025-12-31" maxlenght="8" class="form-control" />
+      </div>
+
+    <div>
+        <label>Poäng</label>
+        <input name="score" type="number" class="form-control" />
+      </div>
+   
+      <button class="btn btn-primary">Lägg till</button>
+    </div>
+    
+  </div>
+  
+</form>
